@@ -158,7 +158,7 @@ export default function TechMarquee() {
           <div
             key={`first-${idx}`}
             title={tech.name}
-            className="flex items-center justify-center w-13 h-13 sm:w-15 sm:h-15 lg:w-16 lg:h-16 rounded-2xl bg-[#12111c] dark:bg-[#0f0e18] border border-slate-800/80 dark:border-white/10 shadow-lg hover:border-purple-500/60 hover:scale-108 transition-all shrink-0 group cursor-default"
+            className="flex items-center justify-center w-13 h-13 sm:w-15 sm:h-15 lg:w-16 lg:h-16 rounded-2xl bg-[#12111c] dark:bg-[#0f0e18] border border-slate-800/80 dark:border-white/10 hover:border-[#a3e635]/60 hover:scale-108 transition-all shrink-0 group cursor-default"
           >
             <tech.icon className="w-6 h-6 sm:w-7 sm:h-7 transition-transform group-hover:scale-110" />
           </div>
@@ -168,7 +168,7 @@ export default function TechMarquee() {
           <div
             key={`second-${idx}`}
             title={tech.name}
-            className="flex items-center justify-center w-13 h-13 sm:w-15 sm:h-15 lg:w-16 lg:h-16 rounded-2xl bg-[#12111c] dark:bg-[#0f0e18] border border-slate-800/80 dark:border-white/10 shadow-lg hover:border-purple-500/60 hover:scale-108 transition-all shrink-0 group cursor-default"
+            className="flex items-center justify-center w-13 h-13 sm:w-15 sm:h-15 lg:w-16 lg:h-16 rounded-2xl bg-[#12111c] dark:bg-[#0f0e18] border border-slate-800/80 dark:border-white/10 hover:border-[#a3e635]/60 hover:scale-108 transition-all shrink-0 group cursor-default"
           >
             <tech.icon className="w-6 h-6 sm:w-7 sm:h-7 transition-transform group-hover:scale-110" />
           </div>

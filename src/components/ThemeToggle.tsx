@@ -10,8 +10,7 @@ export default function ThemeToggle() {
   useEffect(() => {
     setMounted(true);
     const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const initialDark = savedTheme === 'dark' || (!savedTheme && prefersDark);
+    const initialDark = savedTheme !== 'light';
     setIsDark(initialDark);
     if (initialDark) {
       document.documentElement.classList.add('dark');
@@ -34,7 +33,7 @@ export default function ThemeToggle() {
 
   if (!mounted) {
     return (
-      <div className="w-9 h-9 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-100/50 dark:bg-slate-900/50" />
+      <div className="w-9 h-9 rounded-xl border border-white/10 bg-white/5" />
     );
   }
 
@@ -43,7 +42,7 @@ export default function ThemeToggle() {
       id="theme-toggle-btn"
       onClick={toggleTheme}
       aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
-      className="relative p-2 rounded-xl border border-sky-500/20 bg-sky-50/50 dark:bg-slate-900/80 text-sky-600 dark:text-sky-400 hover:border-sky-500/50 hover:bg-sky-100/60 dark:hover:bg-slate-800 transition-all duration-200 shadow-sm focus:outline-none focus:ring-2 focus:ring-sky-400"
+      className="relative p-2 rounded-xl border border-white/10 bg-white/5 text-[#a3e635] hover:border-[#a3e635]/40 hover:bg-[#a3e635]/10 transition-all duration-200 focus:outline-none focus:ring-1 focus:ring-[#a3e635]/50"
     >
       {isDark ? (
         <Sun className="w-4 h-4 transition-transform duration-300 hover:rotate-45" />

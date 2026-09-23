@@ -23,7 +23,7 @@ export default function WorkflowViewer({ workflow }: WorkflowViewerProps) {
   };
 
   return (
-    <div className="w-full rounded-3xl bg-white dark:bg-[#0b0e14] p-6 sm:p-8 relative overflow-hidden shadow-xl border border-slate-200 dark:border-white/10">
+    <div className="w-full rounded-3xl bg-white dark:bg-[#0b0e14] p-6 sm:p-8 relative overflow-hidden border border-slate-200 dark:border-white/10">
       {/* Header bar */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-slate-100 dark:border-white/10">
         <div>
@@ -73,7 +73,7 @@ export default function WorkflowViewer({ workflow }: WorkflowViewerProps) {
               onClick={() => setActiveStepIndex(idx)}
               className={`flex-shrink-0 flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all ${
                 isCurrent
-                  ? 'bg-[#a3e635] text-black shadow-md shadow-[#a3e635]/25 scale-102'
+                  ? 'bg-[#a3e635] text-black scale-102 font-bold'
                   : 'bg-slate-100/70 dark:bg-white/5 text-slate-600 dark:text-slate-400 hover:bg-[#a3e635]/10 dark:hover:bg-white/10 hover:text-[#a3e635]'
               }`}
             >
@@ -120,7 +120,7 @@ export default function WorkflowViewer({ workflow }: WorkflowViewerProps) {
             <button
               onClick={handlePrev}
               aria-label="Previous Workflow Step"
-              className="flex items-center gap-1.5 px-4 py-2 rounded-full border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-200 bg-white/70 dark:bg-white/5 hover:border-[#a3e635]/50 hover:text-[#a3e635] text-xs font-semibold transition-all shadow-xs"
+              className="flex items-center gap-1.5 px-4 py-2 rounded-full border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-200 bg-white/70 dark:bg-white/5 hover:border-[#a3e635]/50 hover:text-[#a3e635] text-xs font-semibold transition-all"
             >
               <ChevronLeft className="w-4 h-4" />
               Previous Stage
@@ -128,7 +128,7 @@ export default function WorkflowViewer({ workflow }: WorkflowViewerProps) {
             <button
               onClick={handleNext}
               aria-label="Next Workflow Step"
-              className="flex items-center gap-1.5 px-5 py-2 rounded-full bg-[#a3e635] hover:bg-[#bef264] text-black text-xs font-extrabold shadow-md shadow-[#a3e635]/20 transition-all active:scale-95"
+              className="flex items-center gap-1.5 px-5 py-2 rounded-full bg-[#a3e635] hover:bg-[#bef264] text-black text-xs font-extrabold transition-all active:scale-95"
             >
               Next Stage
               <ChevronRight className="w-4 h-4 stroke-[2.5]" />
@@ -141,7 +141,7 @@ export default function WorkflowViewer({ workflow }: WorkflowViewerProps) {
 
         {/* Device Frame with Screenshot */}
         <div className="lg:col-span-6 flex justify-center order-1 lg:order-2">
-          <div className="relative w-full max-w-[280px] sm:max-w-[320px] aspect-[9/18] rounded-[36px] p-3 bg-gradient-to-b from-slate-800 via-slate-900 to-black shadow-2xl border-4 border-slate-700/80 ring-1 ring-[#a3e635]/30">
+          <div className="relative w-full max-w-[280px] sm:max-w-[320px] aspect-[9/18] rounded-[36px] p-3 bg-gradient-to-b from-slate-800 via-slate-900 to-black border-4 border-slate-700/80 ring-1 ring-[#a3e635]/30">
             {/* Notch / Speaker */}
             <div className="absolute top-4 left-1/2 -translate-x-1/2 w-24 h-4 bg-slate-950 rounded-full z-20 flex items-center justify-center">
               <div className="w-2.5 h-2.5 rounded-full bg-slate-900 border border-slate-800" />

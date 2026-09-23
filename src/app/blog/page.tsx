@@ -40,7 +40,7 @@ export default function BlogPage() {
             onClick={() => setSelectedTag(tag)}
             className={`px-3 py-1.5 rounded-xl text-xs font-semibold transition-all ${
               selectedTag === tag
-                ? 'bg-[#a3e635] text-black shadow-md shadow-[#a3e635]/25 scale-102 font-bold'
+                ? 'bg-[#a3e635] text-black scale-102 font-bold'
                 : 'bg-slate-100 dark:bg-white/[0.04] text-slate-600 dark:text-slate-400 hover:bg-[#a3e635]/10 hover:text-[#a3e635] border border-transparent dark:border-white/5'
             }`}
           >

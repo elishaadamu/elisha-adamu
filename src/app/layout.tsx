@@ -79,7 +79,8 @@ const jsonLd = {
   url: 'https://elisha-portfolio-dev.netlify.app',
   sameAs: [
     'https://github.com/elishaadamu',
-    'https://www.upwork.com/freelancers/~015bf91b10a6237a89',
+    'https://www.upwork.com/freelancers/~01f347888f7198ba97',
+    'https://www.linkedin.com/in/frontend-developer-elisha-inuwa-75a200422',
   ],
   knowsAbout: [
     'React',
@@ -101,9 +102,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning className="scroll-smooth">
+    <html lang="en" suppressHydrationWarning className="dark scroll-smooth">
       <head>
-        <meta name="color-scheme" content="light dark" />
+        <meta name="color-scheme" content="dark" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -114,11 +115,10 @@ export default function RootLayout({
               (function() {
                 try {
                   const saved = localStorage.getItem('theme');
-                  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                  if (saved === 'dark' || (!saved && prefersDark)) {
-                    document.documentElement.classList.add('dark');
-                  } else {
+                  if (saved === 'light') {
                     document.documentElement.classList.remove('dark');
+                  } else {
+                    document.documentElement.classList.add('dark');
                   }
                 } catch (e) {}
               })();

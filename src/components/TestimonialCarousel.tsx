@@ -25,7 +25,7 @@ export default function TestimonialCarousel({ testimonials }: TestimonialCarouse
   return (
     <div className="relative w-full max-w-4xl mx-auto">
       {/* Testimonial Card */}
-      <div className="relative rounded-3xl bg-white dark:bg-[#0b0e14] border border-slate-200 dark:border-white/10 p-8 sm:p-12 shadow-xl transition-all duration-300">
+      <div className="relative rounded-3xl bg-white dark:bg-[#0b0e14] border border-slate-200 dark:border-white/10 p-8 sm:p-12 transition-all duration-300">
         <div className="flex items-center justify-between pb-6 border-b border-slate-100 dark:border-white/10 mb-6">
           <div className="flex items-center gap-1">
             {[...Array(5)].map((_, i) => (
@@ -55,7 +55,7 @@ export default function TestimonialCarousel({ testimonials }: TestimonialCarouse
         {/* Author Details & Controls Row */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 pt-6 border-t border-slate-100 dark:border-white/10">
           <div className="flex items-center gap-4">
-            <div className="relative w-14 h-14 rounded-2xl overflow-hidden bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 shrink-0 shadow-xs">
+            <div className="relative w-14 h-14 rounded-2xl overflow-hidden bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 shrink-0">
               <Image
                 src={current.avatar}
                 alt={current.name}
@@ -101,14 +101,14 @@ export default function TestimonialCarousel({ testimonials }: TestimonialCarouse
               <button
                 onClick={prev}
                 aria-label="Previous testimonial"
-                className="w-10 h-10 rounded-full border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 flex items-center justify-center text-slate-700 dark:text-slate-300 hover:border-[#a3e635] hover:text-[#a3e635] transition-colors shadow-2xs"
+                className="w-10 h-10 rounded-full border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 flex items-center justify-center text-slate-700 dark:text-slate-300 hover:border-[#a3e635] hover:text-[#a3e635] transition-colors"
               >
                 <ChevronLeft className="w-5 h-5" />
               </button>
               <button
                 onClick={next}
                 aria-label="Next testimonial"
-                className="w-10 h-10 rounded-full border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 flex items-center justify-center text-slate-700 dark:text-slate-300 hover:border-[#a3e635] hover:text-[#a3e635] transition-colors shadow-2xs"
+                className="w-10 h-10 rounded-full border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 flex items-center justify-center text-slate-700 dark:text-slate-300 hover:border-[#a3e635] hover:text-[#a3e635] transition-colors"
               >
                 <ChevronRight className="w-5 h-5" />
               </button>

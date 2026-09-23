@@ -97,7 +97,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
       {/* Cover Image if present */}
       {post.coverImage && (
-        <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden glass-panel border border-white/10 dark:border-white/10 shadow-xl">
+        <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden glass-panel border border-white/10 dark:border-white/10">
           <Image
             src={post.coverImage}
             alt={post.title}

@@ -67,7 +67,7 @@ export default function ContactPage() {
         {/* Left Column: Contact Cards */}
         <div className="lg:col-span-5 space-y-6">
           {/* Profile Greeting Box with img3.png */}
-          <div className="rounded-2xl glass-panel p-5 border border-[#a3e635]/25 flex items-center gap-4 bg-[#a3e635]/5 shadow-md">
+          <div className="rounded-2xl glass-panel p-5 border border-[#a3e635]/25 flex items-center gap-4 bg-[#a3e635]/5">
             <div className="relative w-16 h-16 shrink-0 flex items-center justify-center">
               <Image
                 src="/profile/img3-nobg.png"
@@ -93,7 +93,7 @@ export default function ContactPage() {
             </div>
           </div>
           {/* WhatsApp Primary Card */}
-          <div className="rounded-2xl glass-panel p-6 border-2 border-[#a3e635]/30 bg-[#a3e635]/5 relative overflow-hidden shadow-lg">
+          <div className="rounded-2xl glass-panel p-6 border-2 border-[#a3e635]/30 bg-[#a3e635]/5 relative overflow-hidden">
             <div className="space-y-3">
               <div className="flex items-center justify-between">
                 <span className="inline-flex items-center gap-1.5 text-xs font-bold text-[#a3e635] uppercase tracking-wider font-mono">
@@ -182,7 +182,7 @@ export default function ContactPage() {
 
         {/* Right Column: Contact Form */}
         <div className="lg:col-span-7">
-          <div className="rounded-3xl glass-panel p-8 sm:p-10 border border-white/10 dark:border-white/10 shadow-xl">
+          <div className="rounded-3xl glass-panel p-8 sm:p-10 border border-white/10 dark:border-white/10">
             <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">
               Send a Project Proposal or Inquiry
             </h3>

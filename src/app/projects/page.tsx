@@ -59,7 +59,7 @@ export default function ProjectsPage() {
       </div>
 
       {/* 2. Interactive Mobile Workflows Banner */}
-      <div className="rounded-3xl bg-white dark:bg-[#0b0e14] p-6 sm:p-8 border border-slate-200 dark:border-white/10 shadow-sm">
+      <div className="rounded-3xl bg-white dark:bg-[#0b0e14] p-6 sm:p-8 border border-slate-200 dark:border-white/10">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div className="space-y-1">
             <span className="inline-flex items-center gap-1.5 text-xs font-bold text-[#84cc16] dark:text-[#a3e635] uppercase tracking-wider">
@@ -77,7 +77,7 @@ export default function ProjectsPage() {
           <div className="flex flex-wrap items-center gap-3">
             <button
               onClick={() => setActiveWorkflowModal('audio-to-note')}
-              className="px-5 py-2.5 rounded-full text-xs font-extrabold bg-[#a3e635] hover:bg-[#bef264] text-black shadow-md shadow-[#a3e635]/20 transition-all active:scale-95"
+              className="px-5 py-2.5 rounded-full text-xs font-extrabold bg-[#a3e635] hover:bg-[#bef264] text-black transition-all active:scale-95"
             >
               Audio to Note (8 Stages)
             </button>
@@ -121,7 +121,7 @@ export default function ProjectsPage() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search React, Next.js, Mobile..."
-            className="w-full pl-10 pr-4 py-2 text-xs sm:text-sm rounded-full border border-slate-200 dark:border-white/10 bg-white dark:bg-[#0b0e14] text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:border-[#a3e635] focus:ring-1 focus:ring-[#a3e635] shadow-xs"
+            className="w-full pl-10 pr-4 py-2 text-xs sm:text-sm rounded-full border border-slate-200 dark:border-white/10 bg-white dark:bg-[#0b0e14] text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:border-[#a3e635] focus:ring-1 focus:ring-[#a3e635]"
           />
           {searchQuery && (
             <button
@@ -172,12 +172,12 @@ export default function ProjectsPage() {
           onClick={() => setActiveWorkflowModal(null)}
         >
           <div
-            className="relative max-w-5xl w-full max-h-[90vh] overflow-y-auto rounded-3xl bg-white dark:bg-[#090e1a] border border-slate-200 dark:border-slate-800 p-6 sm:p-8 shadow-2xl"
+            className="relative max-w-5xl w-full max-h-[90vh] overflow-y-auto rounded-3xl bg-white dark:bg-[#090e1a] border border-slate-200 dark:border-white/10 p-6 sm:p-8"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="flex items-center justify-between pb-4 border-b border-slate-200 dark:border-slate-800 mb-6">
+            <div className="flex items-center justify-between pb-4 border-b border-slate-200 dark:border-white/10 mb-6">
               <div className="flex items-center gap-2">
-                <Smartphone className="w-5 h-5 text-sky-500" />
+                <Smartphone className="w-5 h-5 text-[#a3e635]" />
                 <h3 className="font-bold text-lg text-slate-900 dark:text-white">
                   {appWorkflows[activeWorkflowModal].appName} Architecture Workflow
                 </h3>
