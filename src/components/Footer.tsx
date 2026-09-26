@@ -57,7 +57,7 @@ export default function Footer() {
               </h3>
 
               <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-normal">
-                Whether you need a senior frontend engineer for complex React/Next.js architectures, a resilient mobile application in Android or Flutter, or a complete product overhaul, I am ready to collaborate.
+                Whether you need a full-stack engineer for complex React/Next.js architectures, a resilient mobile application in React Native or Android, or high-performance APIs in Express.js and FastAPI, I am ready to collaborate.
               </p>
             </div>
 
@@ -111,13 +111,13 @@ export default function Footer() {
                     Elisha Adamu Inuwa
                   </span>
                   <span className="text-xs font-mono text-[#a3e635]">
-                    Senior Frontend &amp; Mobile Engineer
+                    Full-Stack Web &amp; React Native Developer
                   </span>
                 </div>
               </Link>
 
               <p className="text-base leading-relaxed text-slate-300 font-normal max-w-md">
-                Senior Frontend React &amp; Next.js Developer, Mobile Engineer, and registered Electrical &amp; Electronics Engineer (B.Eng ATBU). Bringing rigorous architectural design, high-converting UX, and zero-compromise speed to modern digital products.
+                Full-Stack Web &amp; React Native Developer, and registered Electrical &amp; Electronics Engineer (B.Eng ATBU, 2024). Bringing rigorous architectural design, high-converting UX, and zero-compromise speed to modern digital products.
               </p>
             </div>
 
@@ -193,11 +193,11 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3 text-base text-slate-300">
               <li className="leading-relaxed">React 19 &amp; Next.js 16</li>
+              <li className="leading-relaxed">React Native &amp; Expo</li>
+              <li className="leading-relaxed">Express.js &amp; FastAPI</li>
               <li className="leading-relaxed">TypeScript Architecture</li>
-              <li className="leading-relaxed">Flutter &amp; Android Apps</li>
               <li className="leading-relaxed">Design Systems &amp; Tailwind</li>
-              <li className="leading-relaxed">Core Web Vitals (95+)</li>
-              <li className="leading-relaxed">REST &amp; WebSockets API</li>
+              <li className="leading-relaxed">REST &amp; WebSockets APIs</li>
             </ul>
           </div>
 

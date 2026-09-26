@@ -104,16 +104,15 @@ export default function HomePage() {
           {/* Bottom Left Info (Desktop) */}
           <div className="hidden md:block absolute bottom-6 left-2 lg:left-8 xl:left-14 max-w-[280px] lg:max-w-[320px] z-20 text-left space-y-3">
             <p className="text-xs sm:text-sm text-slate-300 dark:text-slate-300 leading-relaxed font-normal">
-              Full-Stack &amp; Senior Frontend Engineer harnessing AI, design, and code to rapidly deliver intuitive global solutions for startups and financial institutions.
+              Full-Stack Web &amp; React Native Developer with an Electrical Engineering background. Building high-performance digital products across React, Next.js, Express.js, and Expo.
             </p>
             <a
               href="/documents/elisha-adamu-cv.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              download="Adamu_Elisha_Inuwa_CV.pdf"
               className="inline-flex items-center gap-2 text-xs font-semibold text-slate-300 hover:text-white dark:text-slate-300 dark:hover:text-white transition-colors group"
             >
               <Download className="w-3.5 h-3.5 text-[#a3e635] group-hover:translate-y-0.5 transition-transform" />
-              <span className="underline decoration-slate-600 underline-offset-4 group-hover:decoration-[#a3e635]">Corporate Profile</span>
+              <span className="underline decoration-slate-600 underline-offset-4 group-hover:decoration-[#a3e635]">Download Official CV (PDF)</span>
             </a>
           </div>
 
@@ -132,7 +131,7 @@ export default function HomePage() {
         {/* Mobile Info & CTA (Below Cutout for Small Screens) */}
         <div className="md:hidden flex flex-col items-center text-center space-y-4 pt-4 pb-2 px-4">
           <p className="text-sm text-slate-600 dark:text-slate-300 max-w-sm">
-            Full-Stack &amp; Senior Frontend Engineer harnessing AI, design, and code to rapidly deliver intuitive global solutions for startups and financial institutions.
+            Full-Stack Web &amp; React Native Developer with an Electrical Engineering background. Building high-performance digital products across React, Next.js, Express.js, and Expo.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <Link
@@ -144,12 +143,11 @@ export default function HomePage() {
             </Link>
             <a
               href="/documents/elisha-adamu-cv.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              download="Adamu_Elisha_Inuwa_CV.pdf"
               className="btn-secondary-dark"
             >
               <Download className="w-3.5 h-3.5 text-[#a3e635]" />
-              <span>Corporate Profile</span>
+              <span>Download CV (PDF)</span>
             </a>
           </div>
         </div>

@@ -20,46 +20,47 @@ import {
 
 const experiences = [
   {
-    role: 'Senior Frontend React Developer',
+    role: 'Senior Frontend React Developer & App Developer',
     company: 'AY Creative Technologies',
     location: 'Kano, Nigeria',
     period: '05/2025 – Present',
     duration: 'Ongoing',
     description:
-      'Architecting responsive, high-performance web applications using React.js, Next.js, and Vite. Collaborating with cross-functional design and backend teams, implementing reusable UI component libraries, and integrating complex RESTful APIs.',
+      'Architecting responsive, high-performance web applications using React.js, Next.js, and Vite, and implementing cross-platform mobile applications with React Native and Expo. Collaborating with cross-functional design and backend teams to translate UI/UX designs into reusable component libraries with RESTful API integrations.',
     achievements: [
-      'Engineered dynamic dashboards with optimized bundle size and sub-second paint times.',
-      'Enforced modern accessibility (a11y) and responsive standards across all device breakpoints.',
-      'Streamlined deployment pipelines using Vercel, Netlify, and Render.',
+      'Developed modern web interfaces using React, JavaScript (ES6+), and Vite for optimized runtime performance.',
+      'Implemented mobile application software for mobile devices based on designs using React Native and device tooling.',
+      'Styled applications with Tailwind CSS, Bootstrap, Material UI, and Ant Design ensuring cross-device responsiveness.',
+      'Deployed applications using Netlify, Vercel, and Render with robust Git and GitHub version control.',
     ],
   },
   {
-    role: 'Frontend Developer & Jekyll Specialist',
+    role: 'Frontend Developer & Static Site Architect',
     company: 'Life with Alacrity',
     location: 'California, United States (Remote)',
     period: '09/2023 – Present',
     duration: '2+ Years',
     description:
-      'Collaborating with Christopher Allen (co-author of TLS/SSL and decentralized identity pioneer) to redesign and maintain LifeWithAlacrity.com. Managed complex static site architecture, Jekyll themes, and GitHub Pages deployments.',
+      'Collaborating with Christopher Allen (co-author of TLS/SSL specification and pioneer of decentralized identity architectures) to redesign and maintain LifeWithAlacrity.com. Managed complex static site architecture, Jekyll themes, and GitHub Pages deployments.',
     achievements: [
-      'Redesigned publication layout for maximum typographical clarity and mobile readability.',
+      'Redesigned publication layout and architecture for maximum typographical clarity and mobile readability.',
       'Structured technical essays, cryptographic references, and Markdown content with zero downtime.',
-      'Optimized site speed and search engine indexation.',
+      'Diagnosed and resolved hosting and deployment issues on GitHub repository.',
     ],
     link: 'https://www.lifewithalacrity.com',
   },
   {
-    role: 'Web Developer & Technical Consultant',
+    role: 'Web Developer & Social Media Manager',
     company: 'Sports Tech West',
     location: 'Las Vegas, United States (Remote)',
     period: '07/2024 – Present',
     duration: '1+ Year',
     description:
-      'Led frontend development and digital content architecture for Sports Tech West (Techstars Alumni company). Enhanced web features, optimized SEO performance, and streamlined content distribution.',
+      'Led frontend feature development, digital content architecture, and technical SEO for Sports Tech West. Spearheaded interactive user experience features and managed corporate social media publishing.',
     achievements: [
-      'Implemented high-conversion interactive features to drive user engagement.',
-      'Audited and refined technical SEO, resulting in measurable organic traffic gains.',
-      'Managed digital presence and social media technical integrations.',
+      'Engineered interactive features to increase platform functionality and user engagement.',
+      'Audited and edited content to comply with strict SEO rules, generating measurable organic search traffic gains.',
+      'Managed brand communications and publishing across social media channels.',
     ],
     link: 'http://sportstechwest.com',
   },
@@ -70,36 +71,52 @@ const experiences = [
     period: '01/2023 – Present',
     duration: '3+ Years',
     description:
-      'Built and maintained the corporate security portal. Introduced real-time community engagement modules, Disqus integration, inquiry workflows, and social media channels.',
+      'Built and maintained the corporate security portal. Introduced real-time community engagement modules, Disqus comment integration, inquiry workflows, and social media syndication.',
     achievements: [
-      'Designed end-to-end security services portfolio with fast-loading responsive assets.',
-      'Integrated live feedback channels, increasing client consultations.',
+      'Designed and deployed the corporate website with interactive service portfolios.',
+      'Integrated live feedback channels using Disqus API, boosting client consultations.',
+      'Administered digital channels across TikTok, Facebook, and Instagram to expand outreach.',
     ],
     link: 'https://mastereyeservices.netlify.app',
   },
   {
     role: 'Coding Instructor',
-    company: 'CodeJika & Youth Tech Academy',
-    location: 'Jos, Nigeria',
-    period: '2022 – Present',
-    duration: 'Community Mentorship',
+    company: 'Coding for Kids',
+    location: 'Remote, Nigeria',
+    period: '12/2025 – Present',
+    duration: 'Mentorship',
     description:
-      'Mentored secondary school students and youth aged 8–16 in foundational web development. Taught HTML5, CSS3, modern JavaScript, and algorithmic problem-solving.',
+      'Tutoring children aged 8–14 in foundational web development and programming principles including HTML, CSS, and modern JavaScript. Fostering algorithmic problem-solving and hands-on project creation.',
     achievements: [
-      'Empowered over 50+ students to build and deploy their first live websites independently.',
-      'Curated hands-on project curriculums fostering critical thinking.',
+      'Empowered young students to understand computational thinking and modular coding.',
+      'Guided learners through building their first live web pages and creative interactive projects.',
     ],
   },
   {
-    role: 'Tech Support Specialist & Developer',
+    role: 'Physical Coding Tutor (Volunteering)',
+    company: 'CodeJika',
+    location: 'Jos, Nigeria',
+    period: '10/2022 – 12/2022',
+    duration: 'Community Mentorship',
+    description:
+      'Taught secondary school students the fundamentals of web development using code editors like Notepad, Notepad++, VS Code, and Sublime Text. Introduced essential web technologies: HTML, CSS, and JavaScript.',
+    achievements: [
+      'Empowered over 50+ students to build and deploy their first live websites independently.',
+      'Curated hands-on project curriculums fostering critical thinking and collaborative problem solving.',
+    ],
+    link: 'https://codejika.com/',
+  },
+  {
+    role: 'Tech Support Specialist & Developer (Volunteering)',
     company: 'Kitron Green Initiatives',
     location: 'Nigeria',
     period: '04/2023 – Present',
     duration: 'Sustainability Support',
     description:
-      'Provided dual-role expertise in web development and IT infrastructure for environmental sustainability initiatives. Built web interfaces and diagnosed complex network and hardware configurations.',
+      'Provided dual-role expertise in web development and IT infrastructure for environmental sustainability initiatives. Built responsive web platforms and diagnosed complex network and hardware configurations.',
     achievements: [
       'Maintained organizational platforms and automated daily administrative workflows.',
+      'Diagnosed and resolved technical issues to ensure uninterrupted operational uptime.',
     ],
   },
 ];
@@ -108,32 +125,44 @@ const certifications = [
   {
     title: 'NSE Graduate Member Certificate (GMNSE)',
     issuer: 'The Nigerian Society of Engineers (NSE)',
-    period: 'Official Standing',
+    period: 'Official Standing (G45009)',
     link: 'https://drive.google.com/file/d/1pMVkMwVb8W1Ewuf8g8v5h3Is-2rOJZNg/view?usp=sharing',
   },
   {
-    title: 'Introduction to Android Mobile Application Development',
+    title: 'Introduction to Front-End Development',
     issuer: 'Meta (Coursera)',
-    period: '2023',
-    link: 'https://drive.google.com/file/d/1ee2veXl_aYpJ-hy9Sx2LBksfMyyCHmG5/view?usp=drive_link',
+    period: '2023 · ID: PYVLS7GBFAA7',
+    link: 'https://www.coursera.org/account/accomplishments/verify/PYVLS7GBFAA7',
   },
   {
     title: 'Version Control with Git & GitHub',
     issuer: 'Meta (Coursera)',
-    period: '2023',
-    link: 'https://drive.google.com/file/d/10PICzPKTh9bEIVIOegnvbPnunyHL-pb9/view?usp=sharing',
+    period: '2023 · ID: RW4ZSAVBC4T6',
+    link: 'https://www.coursera.org/account/accomplishments/verify/RW4ZSAVBC4T6',
   },
   {
     title: 'Developing Interpersonal Skills',
     issuer: 'IBM (Coursera)',
-    period: '2023',
-    link: 'https://drive.google.com/file/d/1OsiySSX1Q5a145SKw69owERG_-dUixo5/view?usp=sharing',
+    period: '2023 · ID: MGSZC6NC7V7P',
+    link: 'https://coursera.org/verify/MGSZC6NC7V7P',
   },
   {
     title: 'Meta Frontend Engineer Certificate',
     issuer: 'Meta (Coursera)',
-    period: '2023',
+    period: '2023 – Current',
     link: 'https://coursera.org',
+  },
+  {
+    title: 'National Diploma in Electrical Electronics Eng. Tech.',
+    issuer: 'Gwallameji, Bauchi, Nigeria',
+    period: '2014 – 2017',
+    link: '#education',
+  },
+  {
+    title: 'Satellite Installation',
+    issuer: 'Home of Space & Renewable Technology, Jos',
+    period: '2015 – 2016',
+    link: '#education',
   },
 ];
 
@@ -150,7 +179,7 @@ export default function AboutPage() {
           Bridging Electrical Engineering &amp; Modern Software Systems
         </h1>
         <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-          I apply circuit-level discipline, analytical systems thinking, and a passion for design aesthetics to solve complex challenges in React, Next.js, and Android mobile applications.
+          I apply circuit-level discipline, analytical systems thinking, and a passion for design aesthetics to solve complex challenges in React, Next.js, Express.js, FastAPI, and React Native mobile applications.
         </p>
       </div>
 
@@ -166,7 +195,7 @@ export default function AboutPage() {
             <div className="relative w-full aspect-[4/5] flex items-end justify-center">
               <Image
                 src="/profile/img2-nobg.png"
-                alt="Elisha Adamu Inuwa - Electrical Engineer & Senior Software Developer"
+                alt="Elisha Adamu Inuwa - Electrical Engineer & Full-Stack Developer"
                 fill
                 sizes="(max-width: 768px) 100vw, 420px"
                 className="object-contain object-bottom drop-shadow-2xl hover:scale-102 transition-transform duration-500"
@@ -179,7 +208,7 @@ export default function AboutPage() {
               <div className="p-3.5 rounded-2xl bg-[#0b0e14] border border-white/10 flex items-center justify-between text-xs hover:border-[#a3e635]/40 transition-colors">
                 <div>
                   <p className="font-bold text-white">ATBU Bauchi B.Eng (2:1)</p>
-                  <p className="text-[11px] text-slate-400">Electrical &amp; Electronics Engineering</p>
+                  <p className="text-[11px] text-slate-400">Electrical &amp; Electronics Engineering (19/11/2017 – 28/10/2024)</p>
                 </div>
                 <a
                   href="/documents/bachelors-degree.jpg"
@@ -216,13 +245,13 @@ export default function AboutPage() {
           <div className="p-6 sm:p-7 rounded-2xl bg-[#0b0e14] border border-white/10 space-y-3 hover:border-[#a3e635]/30 transition-colors">
             <h2 className="text-xl font-bold text-white flex items-center gap-2">
               <Zap className="w-5 h-5 text-[#a3e635]" />
-              Engineering Mindset in Frontend Code
+              Engineering Mindset in Software Code
             </h2>
             <p>
-              I graduated with a <strong className="text-white">Second Class Upper (2:1)</strong> in Electrical and Electronics Engineering from <strong className="text-white">Abubakar Tafawa Balewa University (ATBU), Bauchi</strong>. My capstone engineering thesis focused on the design and construction of an automatic solar-powered flood lamp system for Engineering Complex Block C—reducing power consumption by 75% through microcontroller-controlled ambient lux sensors and solar battery management.
+              I graduated with a <strong className="text-white">Second Class Upper (2:1)</strong> in Electrical and Electronics Engineering from <strong className="text-white">Abubakar Tafawa Balewa University (ATBU), Bauchi</strong>. My capstone engineering thesis focused on the design and construction of an automatic solar-powered flood lamp system for Engineering Complex Block C—reducing power consumption by 75% through a 215W solar array, 60Ah battery, and microcontroller-controlled ambient lux sensors.
             </p>
             <p>
-              This rigorous engineering background gave me a first-principles understanding of signal processing, telemetry, state machines, and algorithmic efficiency. When building frontend applications with React and Next.js, or mobile applications with Flutter and React Native, I approach UI state, network latency, and memory consumption with the exact same rigor.
+              This engineering foundation gave me a first-principles understanding of signal processing, telemetry, state machines, and computational efficiency. When building frontend applications with React and Next.js, full-stack systems with Express.js and FastAPI, or mobile applications with React Native and Expo, I approach UI state, network latency, and memory consumption with rigorous engineering discipline.
             </p>
           </div>
 
@@ -235,17 +264,17 @@ export default function AboutPage() {
               Over the past 5+ years, I have collaborated with visionary clients across the globe. Working alongside <strong className="text-white">Christopher Allen</strong> (pioneer of TLS/SSL and founder of Blockchain Commons) on <em>Life with Alacrity</em> honed my attention to typographical precision, cryptographic documentation, and Markdown architecture.
             </p>
             <p>
-              Concurrently, supporting <strong className="text-white">Sports Tech West</strong> in the United States and architecting fintech/telecom infrastructure for <strong className="text-white">SM DATA</strong> in Nigeria demonstrated my capacity to handle diverse business models, live payment gateways, automated VTU APIs, and offline-first mobile apps.
+              Concurrently, supporting <strong className="text-white">Sports Tech West</strong> in the United States, developing for <strong className="text-white">AY Creative Technologies</strong> in Kano, and building fintech/telecom infrastructure for <strong className="text-white">SM DATA</strong> in Nigeria demonstrated my capacity to handle diverse business models, live payment gateways, automated VTU APIs, and cross-platform mobile apps.
             </p>
           </div>
         </div>
       </div>
 
-      {/* 3. Work Experience (Inspired by Yuyu.ng Company Timeline) */}
+      {/* 3. Work Experience */}
       <div className="space-y-8">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
           <div>
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[#a3e635]/10 text-[#a3e635] border border-[#a3e635]/25 mb-2">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[#a3e635]/10 text-[#a3e635] border border-[#a3e635]/25 mb-2 font-mono">
               <Briefcase className="w-3.5 h-3.5" />
               Career Journey
             </div>
@@ -256,11 +285,11 @@ export default function AboutPage() {
 
           <a
             href="/documents/elisha-adamu-cv.pdf"
-            download
+            download="Adamu_Elisha_Inuwa_CV.pdf"
             className="btn-primary-lime self-start sm:self-auto"
           >
             <FileText className="w-4 h-4" />
-            <span>Download Official CV</span>
+            <span>Download Official CV (PDF)</span>
           </a>
         </div>
 
@@ -330,7 +359,7 @@ export default function AboutPage() {
       </div>
 
       {/* 4. Education & Verified Certifications */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div id="education" className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Education Card */}
         <div className="p-8 rounded-2xl bg-[#0b0e14] border border-white/10 space-y-4 hover:border-[#a3e635]/40 transition-colors">
           <div className="w-12 h-12 rounded-xl bg-[#a3e635]/10 border border-[#a3e635]/25 flex items-center justify-center text-[#a3e635]">
@@ -344,12 +373,23 @@ export default function AboutPage() {
               Abubakar Tafawa Balewa University (ATBU), Bauchi
             </p>
             <p className="text-xs text-slate-400 mt-1 font-mono">
-              Second Class Upper Division (2:1) · 2017 – 2023
+              Second Class Upper Division (2:1) · 19/11/2017 – 28/10/2024
             </p>
           </div>
           <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-            Rigorous 5-year curriculum covering control systems, telecommunications, digital electronics, microprocessors, signal processing, and high-voltage power networks.
+            Rigorous engineering curriculum covering power networks, control systems, telecommunications, digital electronics, microprocessors, and automation.
           </p>
+
+          <div className="pt-3 border-t border-white/5 space-y-2">
+            <div className="flex items-center justify-between text-xs">
+              <span className="font-semibold text-white">National Diploma in EE Eng. Technology</span>
+              <span className="font-mono text-slate-400">2014 – 2017</span>
+            </div>
+            <p className="text-xs text-slate-400">
+              Gwallameji, Bauchi, Nigeria • Foundational electronic circuit design, instrumentation, and electrical machinery.
+            </p>
+          </div>
+
           <div className="pt-3">
             <a
               href="/documents/bachelors-degree.jpg"
@@ -388,14 +428,20 @@ export default function AboutPage() {
                     {c.issuer} · {c.period}
                   </p>
                 </div>
-                <a
-                  href={c.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-[#a3e635] hover:underline flex items-center gap-1 font-bold font-mono shrink-0 ml-3"
-                >
-                  Verify <ExternalLink className="w-3 h-3 stroke-[2.5]" />
-                </a>
+                {c.link.startsWith('http') ? (
+                  <a
+                    href={c.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-[#a3e635] hover:underline flex items-center gap-1 font-bold font-mono shrink-0 ml-3"
+                  >
+                    Verify <ExternalLink className="w-3 h-3 stroke-[2.5]" />
+                  </a>
+                ) : (
+                  <span className="text-[#a3e635] font-mono shrink-0 ml-3 font-semibold">
+                    Verified
+                  </span>
+                )}
               </div>
             ))}
           </div>

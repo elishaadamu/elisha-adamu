@@ -59,7 +59,7 @@ export default function ContactPage() {
           Let&apos;s Build Something Extraordinary Together
         </h1>
         <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-          I am currently open for full-time engineering roles, freelance contracts, and technical consulting in React, Next.js, and Android mobile development.
+          I am currently open for full-time engineering roles, freelance contracts, and technical consulting across React, Next.js, Express.js, FastAPI, and React Native mobile development.
         </p>
       </div>
 
@@ -85,10 +85,10 @@ export default function ContactPage() {
                 <span className="w-2 h-2 rounded-full bg-[#a3e635] animate-pulse" />
               </div>
               <p className="text-xs text-[#a3e635] font-medium">
-                Senior Frontend & Mobile Developer
+                Full-Stack Web &amp; React Native Developer
               </p>
               <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">
-                Available for contracts & full-time roles
+                Available for contracts &amp; full-time roles
               </p>
             </div>
           </div>

@@ -309,5 +309,24 @@ export const projects: Project[] = [
     liveUrl: 'https://delivery-app-tan-seven.vercel.app',
     repoUrl: 'https://github.com/elishaadamu/delivery-mobile-app',
     image: '/projects/creator-forge.png',
+  },
+  {
+    id: 'solar-flood-lamp',
+    title: 'Automatic Solar-Powered Flood Lamp System',
+    slug: 'solar-flood-lamp',
+    tagline: 'Engineering Complex Block C, Abubakar Tafawa Balewa University (ATBU)',
+    category: 'Civic & Public Tech',
+    description: 'An automatic solar-powered flood lamp system engineered for Block C, ATBU Bauchi, providing efficient and sustainable public lighting. Utilized a 215W solar panel array, 60Ah storage battery, and microcontroller-controlled ambient lux sensors to switch LED luminaires automatically. Delivered 6,232.2 lux total lumen output, achieved 22% energy efficiency, and reduced energy consumption by 75% compared to conventional floodlights.',
+    role: 'Lead Electrical & Systems Engineer',
+    features: [
+      '215W solar panel array with 60Ah deep-cycle storage battery',
+      'Microcontroller-controlled ambient lux sensors for automated switching',
+      '6,232.2 lux total illumination lumen output',
+      '22% energy efficiency rating with 75% power consumption reduction',
+      'Scalable sustainable clean energy infrastructure design'
+    ],
+    technologies: ['Solar PV Array (215W)', 'Microcontroller Automation', 'Ambient Lux Sensors', 'Battery Management', 'Renewable Energy'],
+    liveUrl: 'https://atbu.edu.ng/',
+    image: '/projects/marcus-engineering.png',
   }
 ];
